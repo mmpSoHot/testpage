@@ -49,6 +49,14 @@
       !n.__lc.asyncInit && e.init();
       n.LiveChatWidget = n.LiveChatWidget || e;
     })(window, document, [].slice);
+	
+	 // 页面加载完成后设置访客信息
+	  window.onload = function() {
+		LiveChatWidget.call('set_customer_email', '46464646@qq.com');
+		LiveChatWidget.call('set_customer_name', 'hotdog001');
+		LiveChatWidget.call('set_customer_id', '5211555');
+	  }
+  
   </script>
   <noscript>
     <a href="https://www.livechat.com/chat-with/19170214/" rel="nofollow">Chat with us</a>, powered by
